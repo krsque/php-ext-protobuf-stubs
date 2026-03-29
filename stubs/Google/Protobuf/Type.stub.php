@@ -65,7 +65,7 @@ final class Type extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .google.protobuf.Field fields = 2;</code>
      * @param list<\Google\Protobuf\Field>|\Google\Protobuf\RepeatedField $var
      */
-    public function setFields($var): static {}
+    public function setFields(array|RepeatedField $var): static {}
 
     /**
      * The list of types appearing in `oneof` definitions in this type.
@@ -81,7 +81,7 @@ final class Type extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated string oneofs = 3;</code>
      * @param list<string>|\Google\Protobuf\RepeatedField $var
      */
-    public function setOneofs($var): static {}
+    public function setOneofs(array|RepeatedField $var): static {}
 
     /**
      * The protocol buffer options.
@@ -97,7 +97,7 @@ final class Type extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .google.protobuf.Option options = 4;</code>
      * @param list<\Google\Protobuf\Option>|\Google\Protobuf\RepeatedField $var
      */
-    public function setOptions($var): static {}
+    public function setOptions(array|RepeatedField $var): static {}
 
     /**
      * The source context.
@@ -112,7 +112,7 @@ final class Type extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.SourceContext source_context = 5;</code>
      */
-    public function setSourceContext(\Google\Protobuf\SourceContext $var): static {}
+    public function setSourceContext(?\Google\Protobuf\SourceContext $var): static {}
 
     public function hasSourceContext(): bool {}
 
@@ -120,6 +120,7 @@ final class Type extends \Google\Protobuf\Internal\Message
      * The source syntax.
      *
      * Generated from protobuf field <code>.google.protobuf.Syntax syntax = 6;</code>
+     * @return int one of the values in {@see \Google\Protobuf\Syntax}
      */
     public function getSyntax(): int {}
 
@@ -127,6 +128,7 @@ final class Type extends \Google\Protobuf\Internal\Message
      * The source syntax.
      *
      * Generated from protobuf field <code>.google.protobuf.Syntax syntax = 6;</code>
+     * @param int $var one of the values in {@see \Google\Protobuf\Syntax}
      */
     public function setSyntax(int $var): static {}
 

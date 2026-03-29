@@ -36,7 +36,6 @@ final class Int64Value extends \Google\Protobuf\Internal\Message
      * The int64 value.
      *
      * Generated from protobuf field <code>int64 value = 1;</code>
-     * @param int|string $var
      */
-    public function setValue($var): static {}
+    public function setValue(int|string $var): static {}
 }

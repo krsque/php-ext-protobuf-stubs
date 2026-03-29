@@ -63,7 +63,7 @@ final class Enum extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .google.protobuf.EnumValue enumvalue = 2;</code>
      * @param list<\Google\Protobuf\EnumValue>|\Google\Protobuf\RepeatedField $var
      */
-    public function setEnumvalue($var): static {}
+    public function setEnumvalue(array|RepeatedField $var): static {}
 
     /**
      * Protocol buffer options.
@@ -79,7 +79,7 @@ final class Enum extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .google.protobuf.Option options = 3;</code>
      * @param list<\Google\Protobuf\Option>|\Google\Protobuf\RepeatedField $var
      */
-    public function setOptions($var): static {}
+    public function setOptions(array|RepeatedField $var): static {}
 
     /**
      * The source context.
@@ -94,7 +94,7 @@ final class Enum extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.SourceContext source_context = 4;</code>
      */
-    public function setSourceContext(\Google\Protobuf\SourceContext $var): static {}
+    public function setSourceContext(?\Google\Protobuf\SourceContext $var): static {}
 
     public function hasSourceContext(): bool {}
 
@@ -102,6 +102,7 @@ final class Enum extends \Google\Protobuf\Internal\Message
      * The source syntax.
      *
      * Generated from protobuf field <code>.google.protobuf.Syntax syntax = 5;</code>
+     * @return int one of the values in {@see \Google\Protobuf\Syntax}
      */
     public function getSyntax(): int {}
 
@@ -109,6 +110,7 @@ final class Enum extends \Google\Protobuf\Internal\Message
      * The source syntax.
      *
      * Generated from protobuf field <code>.google.protobuf.Syntax syntax = 5;</code>
+     * @param int $var one of the values in {@see \Google\Protobuf\Syntax}
      */
     public function setSyntax(int $var): static {}
 

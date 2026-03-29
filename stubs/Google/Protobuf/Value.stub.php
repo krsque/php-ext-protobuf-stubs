@@ -39,6 +39,7 @@ final class Value extends \Google\Protobuf\Internal\Message
      * Represents a null value.
      *
      * Generated from protobuf field <code>.google.protobuf.NullValue null_value = 1;</code>
+     * @return int one of the values in {@see \Google\Protobuf\NullValue}
      */
     public function getNullValue(): int {}
 
@@ -46,6 +47,7 @@ final class Value extends \Google\Protobuf\Internal\Message
      * Represents a null value.
      *
      * Generated from protobuf field <code>.google.protobuf.NullValue null_value = 1;</code>
+     * @param int $var one of the values in {@see \Google\Protobuf\NullValue}
      */
     public function setNullValue(int $var): static {}
 
@@ -112,7 +114,7 @@ final class Value extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Struct struct_value = 5;</code>
      */
-    public function setStructValue(\Google\Protobuf\Struct $var): static {}
+    public function setStructValue(?\Google\Protobuf\Struct $var): static {}
 
     public function hasStructValue(): bool {}
 
@@ -129,7 +131,7 @@ final class Value extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.ListValue list_value = 6;</code>
      */
-    public function setListValue(\Google\Protobuf\ListValue $var): static {}
+    public function setListValue(?\Google\Protobuf\ListValue $var): static {}
 
     public function hasListValue(): bool {}
 

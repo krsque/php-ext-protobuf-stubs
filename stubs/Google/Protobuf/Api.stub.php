@@ -94,7 +94,7 @@ final class Api extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .google.protobuf.Method methods = 2;</code>
      * @param list<\Google\Protobuf\Method>|\Google\Protobuf\RepeatedField $var
      */
-    public function setMethods($var): static {}
+    public function setMethods(array|RepeatedField $var): static {}
 
     /**
      * Any metadata attached to the interface.
@@ -110,7 +110,7 @@ final class Api extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .google.protobuf.Option options = 3;</code>
      * @param list<\Google\Protobuf\Option>|\Google\Protobuf\RepeatedField $var
      */
-    public function setOptions($var): static {}
+    public function setOptions(array|RepeatedField $var): static {}
 
     /**
      * A version string for this interface. If specified, must have the form
@@ -173,7 +173,7 @@ final class Api extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.SourceContext source_context = 5;</code>
      */
-    public function setSourceContext(\Google\Protobuf\SourceContext $var): static {}
+    public function setSourceContext(?\Google\Protobuf\SourceContext $var): static {}
 
     public function hasSourceContext(): bool {}
 
@@ -191,12 +191,13 @@ final class Api extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .google.protobuf.Mixin mixins = 6;</code>
      * @param list<\Google\Protobuf\Mixin>|\Google\Protobuf\RepeatedField $var
      */
-    public function setMixins($var): static {}
+    public function setMixins(array|RepeatedField $var): static {}
 
     /**
      * The source syntax of the service.
      *
      * Generated from protobuf field <code>.google.protobuf.Syntax syntax = 7;</code>
+     * @return int one of the values in {@see \Google\Protobuf\Syntax}
      */
     public function getSyntax(): int {}
 
@@ -204,6 +205,7 @@ final class Api extends \Google\Protobuf\Internal\Message
      * The source syntax of the service.
      *
      * Generated from protobuf field <code>.google.protobuf.Syntax syntax = 7;</code>
+     * @param int $var one of the values in {@see \Google\Protobuf\Syntax}
      */
     public function setSyntax(int $var): static {}
 

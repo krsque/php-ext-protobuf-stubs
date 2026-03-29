@@ -49,6 +49,7 @@ final class Field extends \Google\Protobuf\Internal\Message
      * The field type.
      *
      * Generated from protobuf field <code>.google.protobuf.Field.Kind kind = 1;</code>
+     * @return int one of the values in {@see \Google\Protobuf\Field\Kind}
      */
     public function getKind(): int {}
 
@@ -56,6 +57,7 @@ final class Field extends \Google\Protobuf\Internal\Message
      * The field type.
      *
      * Generated from protobuf field <code>.google.protobuf.Field.Kind kind = 1;</code>
+     * @param int $var one of the values in {@see \Google\Protobuf\Field\Kind}
      */
     public function setKind(int $var): static {}
 
@@ -63,6 +65,7 @@ final class Field extends \Google\Protobuf\Internal\Message
      * The field cardinality.
      *
      * Generated from protobuf field <code>.google.protobuf.Field.Cardinality cardinality = 2;</code>
+     * @return int one of the values in {@see \Google\Protobuf\Field\Cardinality}
      */
     public function getCardinality(): int {}
 
@@ -70,6 +73,7 @@ final class Field extends \Google\Protobuf\Internal\Message
      * The field cardinality.
      *
      * Generated from protobuf field <code>.google.protobuf.Field.Cardinality cardinality = 2;</code>
+     * @param int $var one of the values in {@see \Google\Protobuf\Field\Cardinality}
      */
     public function setCardinality(int $var): static {}
 
@@ -161,7 +165,7 @@ final class Field extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .google.protobuf.Option options = 9;</code>
      * @param list<\Google\Protobuf\Option>|\Google\Protobuf\RepeatedField $var
      */
-    public function setOptions($var): static {}
+    public function setOptions(array|RepeatedField $var): static {}
 
     /**
      * The field JSON name.

@@ -36,5 +36,5 @@ final class ListValue extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .google.protobuf.Value values = 1;</code>
      * @param list<\Google\Protobuf\Value>|\Google\Protobuf\RepeatedField $var
      */
-    public function setValues($var): static {}
+    public function setValues(array|RepeatedField $var): static {}
 }

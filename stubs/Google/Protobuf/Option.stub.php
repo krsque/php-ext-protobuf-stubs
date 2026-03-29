@@ -69,7 +69,7 @@ final class Option extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Any value = 2;</code>
      */
-    public function setValue(\Google\Protobuf\Any $var): static {}
+    public function setValue(?\Google\Protobuf\Any $var): static {}
 
     public function hasValue(): bool {}
 }

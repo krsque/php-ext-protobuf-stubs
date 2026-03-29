@@ -71,5 +71,5 @@ final class EnumValue extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .google.protobuf.Option options = 3;</code>
      * @param list<\Google\Protobuf\Option>|\Google\Protobuf\RepeatedField $var
      */
-    public function setOptions($var): static {}
+    public function setOptions(array|RepeatedField $var): static {}
 }

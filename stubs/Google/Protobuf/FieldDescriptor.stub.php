@@ -14,12 +14,6 @@ final class FieldDescriptor
      */
     public function getNumber(): int {}
 
-    /**
-     * @deprecated Use isRepeated() or isRequired() instead.
-     *
-     */
-    public function getLabel(): int {}
-
     public function isRequired(): bool {}
 
     public function isRepeated(): bool {}
@@ -39,6 +33,19 @@ final class FieldDescriptor
      * @return \Google\Protobuf\OneofDescriptor|null
      */
     public function getRealContainingOneof() {}
+
+    /**
+     * Returns true if this field tracks presence, ie. does the field
+     * distinguish between "unset" and "present with default value."
+     *
+     * This includes required, optional, and oneof fields. It excludes maps,
+     * repeated fields, and singular proto3 fields without "optional".
+     *
+     * For fields where hasPresence() == true, the return value of
+     * msg.hasField() is semantically meaningful.
+     *
+     */
+    public function hasPresence(): bool {}
 
     /**
      * @return Descriptor Returns a descriptor for the field type if the field type is a message, otherwise throws \Exception

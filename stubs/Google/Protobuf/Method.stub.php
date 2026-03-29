@@ -127,7 +127,7 @@ final class Method extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .google.protobuf.Option options = 6;</code>
      * @param list<\Google\Protobuf\Option>|\Google\Protobuf\RepeatedField $var
      */
-    public function setOptions($var): static {}
+    public function setOptions(array|RepeatedField $var): static {}
 
     /**
      * The source syntax of this method.
@@ -135,6 +135,7 @@ final class Method extends \Google\Protobuf\Internal\Message
      * Api. This is similar to Field and EnumValue.
      *
      * Generated from protobuf field <code>.google.protobuf.Syntax syntax = 7 [deprecated = true];</code>
+     * @return int one of the values in {@see \Google\Protobuf\Syntax}
      * @deprecated
      */
     public function getSyntax(): int {}
@@ -145,6 +146,7 @@ final class Method extends \Google\Protobuf\Internal\Message
      * Api. This is similar to Field and EnumValue.
      *
      * Generated from protobuf field <code>.google.protobuf.Syntax syntax = 7 [deprecated = true];</code>
+     * @param int $var one of the values in {@see \Google\Protobuf\Syntax}
      * @deprecated
      */
     public function setSyntax(int $var): static {}

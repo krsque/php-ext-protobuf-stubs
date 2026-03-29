@@ -90,9 +90,8 @@ final class Duration extends \Google\Protobuf\Internal\Message
      * 60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
      *
      * Generated from protobuf field <code>int64 seconds = 1;</code>
-     * @param int|string $var
      */
-    public function setSeconds($var): static {}
+    public function setSeconds(int|string $var): static {}
 
     /**
      * Signed fractions of a second at nanosecond resolution of the span

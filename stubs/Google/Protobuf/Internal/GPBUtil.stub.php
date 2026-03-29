@@ -81,4 +81,10 @@ class GPBUtil
      * @internal
      */
     public static function checkRepeatedField(mixed &$var, int $type, ?string $klass = null): void {}
+
+    /**
+     * @param int|string $int64
+     * @internal
+     */
+    public static function compatibleInt64($int64, string $stringInt64): bool {}
 }
