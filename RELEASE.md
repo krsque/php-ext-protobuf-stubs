@@ -1,10 +1,13 @@
-# 32.1.0
+# 33.0.0
 
-Stubs for `ext-protobuf` v4.32.1.
+Stubs for `ext-protobuf` v4.33.0.
 
 Stub files: 46 | C ext classes: 57 | PHP lib classes: 121
 
-No stub changes from 32.0.0.
+## Changes from 32.1.0
+
+**Other changes (PHPDoc, formatting):**
+- `Google\Protobuf\Timestamp`
 
 ## Divergences (C ext vs PHP lib)
 
