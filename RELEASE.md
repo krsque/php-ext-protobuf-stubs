@@ -1,42 +1,10 @@
-# 34.0.0
+# 34.1.0
 
-Stubs for `ext-protobuf` v5.34.0.
+Stubs for `ext-protobuf` v5.34.1.
 
 Stub files: 46 | C ext classes: 57 | PHP lib classes: 118
 
-## Changes from 33.5.0
-
-**PHP version requirement changed:** `>=8.1` -> `>=8.2`
-
-**Method/constant changes:**
-- Changed `Google\Protobuf\Api::setMethods()` signature
-- Changed `Google\Protobuf\Api::setOptions()` signature
-- Changed `Google\Protobuf\Api::setSourceContext()` signature
-- Changed `Google\Protobuf\Api::setMixins()` signature
-- Changed `Google\Protobuf\Duration::setSeconds()` signature
-- Changed `Google\Protobuf\Enum::setEnumvalue()` signature
-- Changed `Google\Protobuf\Enum::setOptions()` signature
-- Changed `Google\Protobuf\Enum::setSourceContext()` signature
-- Changed `Google\Protobuf\EnumValue::setOptions()` signature
-- Changed `Google\Protobuf\Field::setOptions()` signature
-- Added `Google\Protobuf\FieldDescriptor::hasPresence()`
-- Removed `Google\Protobuf\FieldDescriptor::getLabel()`
-- Changed `Google\Protobuf\FieldMask::setPaths()` signature
-- Changed `Google\Protobuf\Int64Value::setValue()` signature
-- Added `Google\Protobuf\Internal\GPBUtil::compatibleInt64()`
-- Changed `Google\Protobuf\ListValue::setValues()` signature
-- Changed `Google\Protobuf\Method::setOptions()` signature
-- Changed `Google\Protobuf\Option::setValue()` signature
-- Added constant `Google\Protobuf\PrintOptions::EMIT_DEFAULTS`
-- Changed `Google\Protobuf\Struct::setFields()` signature
-- Changed `Google\Protobuf\Timestamp::setSeconds()` signature
-- Changed `Google\Protobuf\Type::setFields()` signature
-- Changed `Google\Protobuf\Type::setOneofs()` signature
-- Changed `Google\Protobuf\Type::setOptions()` signature
-- Changed `Google\Protobuf\Type::setSourceContext()` signature
-- Changed `Google\Protobuf\UInt64Value::setValue()` signature
-- Changed `Google\Protobuf\Value::setStructValue()` signature
-- Changed `Google\Protobuf\Value::setListValue()` signature
+No stub changes from 34.0.0.
 
 ## Divergences (C ext vs PHP lib)
 
