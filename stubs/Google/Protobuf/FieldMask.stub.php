@@ -165,7 +165,7 @@ final class FieldMask extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $paths
+     *     @type string[] $paths
      *           The set of field mask paths.
      * }
      */
@@ -175,14 +175,15 @@ final class FieldMask extends \Google\Protobuf\Internal\Message
      * The set of field mask paths.
      *
      * Generated from protobuf field <code>repeated string paths = 1;</code>
+     * @return RepeatedField<string>
      */
-    public function getPaths(): \Google\Protobuf\Internal\RepeatedField {}
+    public function getPaths(): RepeatedField {}
 
     /**
      * The set of field mask paths.
      *
      * Generated from protobuf field <code>repeated string paths = 1;</code>
-     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param list<string>|\Google\Protobuf\RepeatedField $var
      */
     public function setPaths($var): static {}
 }

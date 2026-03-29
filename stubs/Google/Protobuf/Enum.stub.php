@@ -17,9 +17,9 @@ final class Enum extends \Google\Protobuf\Internal\Message
      *
      *     @type string $name
      *           Enum type name.
-     *     @type array<\Google\Protobuf\EnumValue>|\Google\Protobuf\Internal\RepeatedField $enumvalue
+     *     @type \Google\Protobuf\EnumValue[] $enumvalue
      *           Enum value definitions.
-     *     @type array<\Google\Protobuf\Option>|\Google\Protobuf\Internal\RepeatedField $options
+     *     @type \Google\Protobuf\Option[] $options
      *           Protocol buffer options.
      *     @type \Google\Protobuf\SourceContext $source_context
      *           The source context.
@@ -49,14 +49,15 @@ final class Enum extends \Google\Protobuf\Internal\Message
      * Enum value definitions.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.EnumValue enumvalue = 2;</code>
+     * @return RepeatedField<\Google\Protobuf\EnumValue>
      */
-    public function getEnumvalue(): \Google\Protobuf\Internal\RepeatedField {}
+    public function getEnumvalue(): RepeatedField {}
 
     /**
      * Enum value definitions.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.EnumValue enumvalue = 2;</code>
-     * @param array<\Google\Protobuf\EnumValue>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param list<\Google\Protobuf\EnumValue>|\Google\Protobuf\RepeatedField $var
      */
     public function setEnumvalue($var): static {}
 
@@ -64,14 +65,15 @@ final class Enum extends \Google\Protobuf\Internal\Message
      * Protocol buffer options.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Option options = 3;</code>
+     * @return RepeatedField<\Google\Protobuf\Option>
      */
-    public function getOptions(): \Google\Protobuf\Internal\RepeatedField {}
+    public function getOptions(): RepeatedField {}
 
     /**
      * Protocol buffer options.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Option options = 3;</code>
-     * @param array<\Google\Protobuf\Option>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param list<\Google\Protobuf\Option>|\Google\Protobuf\RepeatedField $var
      */
     public function setOptions($var): static {}
 

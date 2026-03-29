@@ -14,7 +14,15 @@ final class FieldDescriptor
      */
     public function getNumber(): int {}
 
+    /**
+     * @deprecated Use isRepeated() or isRequired() instead.
+     *
+     */
     public function getLabel(): int {}
+
+    public function isRequired(): bool {}
+
+    public function isRepeated(): bool {}
 
     public function getType(): int {}
 

@@ -31,7 +31,7 @@ final class Field extends \Google\Protobuf\Internal\Message
      *           types. The first type has index 1; zero means the type is not in the list.
      *     @type bool $packed
      *           Whether to use alternative packed wire representation.
-     *     @type array<\Google\Protobuf\Option>|\Google\Protobuf\Internal\RepeatedField $options
+     *     @type \Google\Protobuf\Option[] $options
      *           The protocol buffer options.
      *     @type string $json_name
      *           The field JSON name.
@@ -147,14 +147,15 @@ final class Field extends \Google\Protobuf\Internal\Message
      * The protocol buffer options.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Option options = 9;</code>
+     * @return RepeatedField<\Google\Protobuf\Option>
      */
-    public function getOptions(): \Google\Protobuf\Internal\RepeatedField {}
+    public function getOptions(): RepeatedField {}
 
     /**
      * The protocol buffer options.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Option options = 9;</code>
-     * @param array<\Google\Protobuf\Option>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param list<\Google\Protobuf\Option>|\Google\Protobuf\RepeatedField $var
      */
     public function setOptions($var): static {}
 

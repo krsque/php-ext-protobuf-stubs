@@ -1,10 +1,35 @@
-# 30.2.0
+# 31.0.0
 
-Stubs for `ext-protobuf` v4.30.2.
+Stubs for `ext-protobuf` v4.31.0.
 
-Stub files: 45 | C ext classes: 56 | PHP lib classes: 116
+Stub files: 46 | C ext classes: 57 | PHP lib classes: 121
 
-No stub changes from 30.1.0.
+## Changes from 30.2.0
+
+**Added classes:**
+- `Google\Protobuf\PrintOptions`
+- `Google\Protobuf\RepeatedField`
+
+**Removed classes:**
+- `Google\Protobuf\Internal\RepeatedField`
+
+**Method/constant changes:**
+- Changed `Google\Protobuf\Api::getMethods()` signature
+- Changed `Google\Protobuf\Api::getOptions()` signature
+- Changed `Google\Protobuf\Api::getMixins()` signature
+- Changed `Google\Protobuf\Enum::getEnumvalue()` signature
+- Changed `Google\Protobuf\Enum::getOptions()` signature
+- Changed `Google\Protobuf\EnumValue::getOptions()` signature
+- Changed `Google\Protobuf\Field::getOptions()` signature
+- Added `Google\Protobuf\FieldDescriptor::isRequired()`
+- Added `Google\Protobuf\FieldDescriptor::isRepeated()`
+- Changed `Google\Protobuf\FieldMask::getPaths()` signature
+- Changed `Google\Protobuf\Internal\Message::serializeToJsonString()` signature
+- Changed `Google\Protobuf\ListValue::getValues()` signature
+- Changed `Google\Protobuf\Method::getOptions()` signature
+- Changed `Google\Protobuf\Type::getFields()` signature
+- Changed `Google\Protobuf\Type::getOneofs()` signature
+- Changed `Google\Protobuf\Type::getOptions()` signature
 
 ## Divergences (C ext vs PHP lib)
 
@@ -48,6 +73,8 @@ These classes exist in the `google/protobuf` PHP library but not in the C extens
 - `Google\Protobuf\Internal\FeatureSet\MessageEncoding`
 - `Google\Protobuf\Internal\FeatureSet\RepeatedFieldEncoding`
 - `Google\Protobuf\Internal\FeatureSet\Utf8Validation`
+- `Google\Protobuf\Internal\FeatureSet\VisibilityFeature`
+- `Google\Protobuf\Internal\FeatureSet\VisibilityFeature\DefaultSymbolVisibility`
 - `Google\Protobuf\Internal\FieldDescriptor`
 - `Google\Protobuf\Internal\FieldDescriptorProto`
 - `Google\Protobuf\Internal\FieldDescriptorProto\Label`
@@ -83,10 +110,12 @@ These classes exist in the `google/protobuf` PHP library but not in the C extens
 - `Google\Protobuf\Internal\OneofField`
 - `Google\Protobuf\Internal\OneofOptions`
 - `Google\Protobuf\Internal\RawInputStream`
+- `Google\Protobuf\Internal\RepeatedField`
 - `Google\Protobuf\Internal\ServiceDescriptorProto`
 - `Google\Protobuf\Internal\ServiceOptions`
 - `Google\Protobuf\Internal\SourceCodeInfo`
 - `Google\Protobuf\Internal\SourceCodeInfo\Location`
+- `Google\Protobuf\Internal\SymbolVisibility`
 - `Google\Protobuf\Internal\TimestampBase`
 - `Google\Protobuf\Internal\UninterpretedOption`
 - `Google\Protobuf\Internal\UninterpretedOption\NamePart`

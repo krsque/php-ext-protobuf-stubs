@@ -25,7 +25,7 @@ final class Method extends \Google\Protobuf\Internal\Message
      *           The URL of the output message type.
      *     @type bool $response_streaming
      *           If true, the response is streamed.
-     *     @type array<\Google\Protobuf\Option>|\Google\Protobuf\Internal\RepeatedField $options
+     *     @type \Google\Protobuf\Option[] $options
      *           Any metadata attached to the method.
      *     @type int $syntax
      *           The source syntax of this method.
@@ -107,14 +107,15 @@ final class Method extends \Google\Protobuf\Internal\Message
      * Any metadata attached to the method.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Option options = 6;</code>
+     * @return RepeatedField<\Google\Protobuf\Option>
      */
-    public function getOptions(): \Google\Protobuf\Internal\RepeatedField {}
+    public function getOptions(): RepeatedField {}
 
     /**
      * Any metadata attached to the method.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Option options = 6;</code>
-     * @param array<\Google\Protobuf\Option>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param list<\Google\Protobuf\Option>|\Google\Protobuf\RepeatedField $var
      */
     public function setOptions($var): static {}
 

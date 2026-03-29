@@ -16,7 +16,7 @@ final class ListValue extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Google\Protobuf\Value>|\Google\Protobuf\Internal\RepeatedField $values
+     *     @type \Google\Protobuf\Value[] $values
      *           Repeated field of dynamically typed values.
      * }
      */
@@ -26,14 +26,15 @@ final class ListValue extends \Google\Protobuf\Internal\Message
      * Repeated field of dynamically typed values.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Value values = 1;</code>
+     * @return RepeatedField<\Google\Protobuf\Value>
      */
-    public function getValues(): \Google\Protobuf\Internal\RepeatedField {}
+    public function getValues(): RepeatedField {}
 
     /**
      * Repeated field of dynamically typed values.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Value values = 1;</code>
-     * @param array<\Google\Protobuf\Value>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param list<\Google\Protobuf\Value>|\Google\Protobuf\RepeatedField $var
      */
     public function setValues($var): static {}
 }

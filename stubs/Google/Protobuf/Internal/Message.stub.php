@@ -42,7 +42,7 @@ class Message
      * Serialize the message to json string.
      * @return string Serialized json protobuf data.
      */
-    public function serializeToJsonString(): string {}
+    public function serializeToJsonString($options = 0): string {}
 
     /**
      * Parses a json string to protobuf message.
