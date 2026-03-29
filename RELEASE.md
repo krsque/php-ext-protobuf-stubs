@@ -1,35 +1,10 @@
-# 31.0.0
+# 31.1.0
 
-Stubs for `ext-protobuf` v4.31.0.
+Stubs for `ext-protobuf` v4.31.1.
 
 Stub files: 46 | C ext classes: 57 | PHP lib classes: 121
 
-## Changes from 30.2.0
-
-**Added classes:**
-- `Google\Protobuf\PrintOptions`
-- `Google\Protobuf\RepeatedField`
-
-**Removed classes:**
-- `Google\Protobuf\Internal\RepeatedField`
-
-**Method/constant changes:**
-- Changed `Google\Protobuf\Api::getMethods()` signature
-- Changed `Google\Protobuf\Api::getOptions()` signature
-- Changed `Google\Protobuf\Api::getMixins()` signature
-- Changed `Google\Protobuf\Enum::getEnumvalue()` signature
-- Changed `Google\Protobuf\Enum::getOptions()` signature
-- Changed `Google\Protobuf\EnumValue::getOptions()` signature
-- Changed `Google\Protobuf\Field::getOptions()` signature
-- Added `Google\Protobuf\FieldDescriptor::isRequired()`
-- Added `Google\Protobuf\FieldDescriptor::isRepeated()`
-- Changed `Google\Protobuf\FieldMask::getPaths()` signature
-- Changed `Google\Protobuf\Internal\Message::serializeToJsonString()` signature
-- Changed `Google\Protobuf\ListValue::getValues()` signature
-- Changed `Google\Protobuf\Method::getOptions()` signature
-- Changed `Google\Protobuf\Type::getFields()` signature
-- Changed `Google\Protobuf\Type::getOneofs()` signature
-- Changed `Google\Protobuf\Type::getOptions()` signature
+No stub changes from 31.0.0.
 
 ## Divergences (C ext vs PHP lib)
 
