@@ -1,10 +1,31 @@
-# 29.3.0
+# 30.0.0
 
-Stubs for `ext-protobuf` v4.29.3.
+Stubs for `ext-protobuf` v4.30.0.
 
-Stub files: 45 | C ext classes: 56 | PHP lib classes: 110
+Stub files: 45 | C ext classes: 56 | PHP lib classes: 116
 
-No stub changes from 29.2.0.
+## Changes from 29.3.0
+
+**Method/constant changes:**
+- Added `Google\Protobuf\Enum::getEdition()`
+- Added `Google\Protobuf\Enum::setEdition()`
+- Added constant `Google\Protobuf\Syntax::SYNTAX_EDITIONS`
+- Added `Google\Protobuf\Type::getEdition()`
+- Added `Google\Protobuf\Type::setEdition()`
+
+**Other changes (PHPDoc, formatting):**
+- `Google\Protobuf\Any`
+- `Google\Protobuf\BoolValue`
+- `Google\Protobuf\BytesValue`
+- `Google\Protobuf\DoubleValue`
+- `Google\Protobuf\FloatValue`
+- `Google\Protobuf\Int32Value`
+- `Google\Protobuf\Int64Value`
+- `Google\Protobuf\NullValue`
+- `Google\Protobuf\StringValue`
+- `Google\Protobuf\Timestamp`
+- `Google\Protobuf\UInt32Value`
+- `Google\Protobuf\UInt64Value`
 
 ## Divergences (C ext vs PHP lib)
 
@@ -27,34 +48,43 @@ These classes exist in the `google/protobuf` PHP library but not in the C extens
 - `Google\Protobuf\Internal\DescriptorProto`
 - `Google\Protobuf\Internal\DescriptorProto\ExtensionRange`
 - `Google\Protobuf\Internal\DescriptorProto\ReservedRange`
-- `Google\Protobuf\Internal\DescriptorProto_ExtensionRange`
-- `Google\Protobuf\Internal\DescriptorProto_ReservedRange`
+- `Google\Protobuf\Internal\Edition`
 - `Google\Protobuf\Internal\EnumBuilderContext`
 - `Google\Protobuf\Internal\EnumDescriptor`
 - `Google\Protobuf\Internal\EnumDescriptorProto`
 - `Google\Protobuf\Internal\EnumDescriptorProto\EnumReservedRange`
-- `Google\Protobuf\Internal\EnumDescriptorProto_EnumReservedRange`
 - `Google\Protobuf\Internal\EnumOptions`
 - `Google\Protobuf\Internal\EnumValueDescriptorProto`
 - `Google\Protobuf\Internal\EnumValueOptions`
 - `Google\Protobuf\Internal\ExtensionRangeOptions`
+- `Google\Protobuf\Internal\ExtensionRangeOptions\Declaration`
+- `Google\Protobuf\Internal\ExtensionRangeOptions\VerificationState`
+- `Google\Protobuf\Internal\FeatureSet`
+- `Google\Protobuf\Internal\FeatureSetDefaults`
+- `Google\Protobuf\Internal\FeatureSetDefaults\FeatureSetEditionDefault`
+- `Google\Protobuf\Internal\FeatureSet\EnforceNamingStyle`
+- `Google\Protobuf\Internal\FeatureSet\EnumType`
+- `Google\Protobuf\Internal\FeatureSet\FieldPresence`
+- `Google\Protobuf\Internal\FeatureSet\JsonFormat`
+- `Google\Protobuf\Internal\FeatureSet\MessageEncoding`
+- `Google\Protobuf\Internal\FeatureSet\RepeatedFieldEncoding`
+- `Google\Protobuf\Internal\FeatureSet\Utf8Validation`
 - `Google\Protobuf\Internal\FieldDescriptor`
 - `Google\Protobuf\Internal\FieldDescriptorProto`
 - `Google\Protobuf\Internal\FieldDescriptorProto\Label`
 - `Google\Protobuf\Internal\FieldDescriptorProto\Type`
-- `Google\Protobuf\Internal\FieldDescriptorProto_Label`
-- `Google\Protobuf\Internal\FieldDescriptorProto_Type`
 - `Google\Protobuf\Internal\FieldOptions`
 - `Google\Protobuf\Internal\FieldOptions\CType`
+- `Google\Protobuf\Internal\FieldOptions\EditionDefault`
+- `Google\Protobuf\Internal\FieldOptions\FeatureSupport`
 - `Google\Protobuf\Internal\FieldOptions\JSType`
-- `Google\Protobuf\Internal\FieldOptions_CType`
-- `Google\Protobuf\Internal\FieldOptions_JSType`
+- `Google\Protobuf\Internal\FieldOptions\OptionRetention`
+- `Google\Protobuf\Internal\FieldOptions\OptionTargetType`
 - `Google\Protobuf\Internal\FileDescriptor`
 - `Google\Protobuf\Internal\FileDescriptorProto`
 - `Google\Protobuf\Internal\FileDescriptorSet`
 - `Google\Protobuf\Internal\FileOptions`
 - `Google\Protobuf\Internal\FileOptions\OptimizeMode`
-- `Google\Protobuf\Internal\FileOptions_OptimizeMode`
 - `Google\Protobuf\Internal\GPBDecodeException`
 - `Google\Protobuf\Internal\GPBJsonWire`
 - `Google\Protobuf\Internal\GPBLabel`
@@ -62,14 +92,13 @@ These classes exist in the `google/protobuf` PHP library but not in the C extens
 - `Google\Protobuf\Internal\GPBWireType`
 - `Google\Protobuf\Internal\GeneratedCodeInfo`
 - `Google\Protobuf\Internal\GeneratedCodeInfo\Annotation`
-- `Google\Protobuf\Internal\GeneratedCodeInfo_Annotation`
+- `Google\Protobuf\Internal\GeneratedCodeInfo\Annotation\Semantic`
 - `Google\Protobuf\Internal\MapEntry`
 - `Google\Protobuf\Internal\MessageBuilderContext`
 - `Google\Protobuf\Internal\MessageOptions`
 - `Google\Protobuf\Internal\MethodDescriptorProto`
 - `Google\Protobuf\Internal\MethodOptions`
 - `Google\Protobuf\Internal\MethodOptions\IdempotencyLevel`
-- `Google\Protobuf\Internal\MethodOptions_IdempotencyLevel`
 - `Google\Protobuf\Internal\OneofDescriptor`
 - `Google\Protobuf\Internal\OneofDescriptorProto`
 - `Google\Protobuf\Internal\OneofField`
@@ -79,8 +108,6 @@ These classes exist in the `google/protobuf` PHP library but not in the C extens
 - `Google\Protobuf\Internal\ServiceOptions`
 - `Google\Protobuf\Internal\SourceCodeInfo`
 - `Google\Protobuf\Internal\SourceCodeInfo\Location`
-- `Google\Protobuf\Internal\SourceCodeInfo_Location`
 - `Google\Protobuf\Internal\TimestampBase`
 - `Google\Protobuf\Internal\UninterpretedOption`
 - `Google\Protobuf\Internal\UninterpretedOption\NamePart`
-- `Google\Protobuf\Internal\UninterpretedOption_NamePart`

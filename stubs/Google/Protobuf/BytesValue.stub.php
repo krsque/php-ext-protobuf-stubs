@@ -5,6 +5,8 @@ namespace Google\Protobuf;
 /**
  * Wrapper message for `bytes`.
  * The JSON representation for `BytesValue` is JSON string.
+ * Not recommended for use in new APIs, but still useful for legacy APIs and
+ * has no plan to be removed.
  *
  * Generated from protobuf message <code>google.protobuf.BytesValue</code>
  */

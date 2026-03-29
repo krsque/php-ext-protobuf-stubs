@@ -25,6 +25,8 @@ final class Enum extends \Google\Protobuf\Internal\Message
      *           The source context.
      *     @type int $syntax
      *           The source syntax.
+     *     @type string $edition
+     *           The source edition string, only valid when syntax is SYNTAX_EDITIONS.
      * }
      */
     public function __construct(?array $data = null) {}
@@ -101,4 +103,18 @@ final class Enum extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.protobuf.Syntax syntax = 5;</code>
      */
     public function setSyntax(int $var): static {}
+
+    /**
+     * The source edition string, only valid when syntax is SYNTAX_EDITIONS.
+     *
+     * Generated from protobuf field <code>string edition = 6;</code>
+     */
+    public function getEdition(): string {}
+
+    /**
+     * The source edition string, only valid when syntax is SYNTAX_EDITIONS.
+     *
+     * Generated from protobuf field <code>string edition = 6;</code>
+     */
+    public function setEdition(string $var): static {}
 }

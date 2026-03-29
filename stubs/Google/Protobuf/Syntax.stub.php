@@ -24,6 +24,13 @@ class Syntax
     public const SYNTAX_PROTO3 = 1;
 
     /**
+     * Syntax `editions`.
+     *
+     * Generated from protobuf enum <code>SYNTAX_EDITIONS = 2;</code>
+     */
+    public const SYNTAX_EDITIONS = 2;
+
+    /**
      * @param int $value Enum value.
      * @return string|null Enum name, or null if value is unknown.
      */
