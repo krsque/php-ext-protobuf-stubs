@@ -1,10 +1,10 @@
-# 33.2.0
+# 33.3.0
 
-Stubs for `ext-protobuf` v4.33.2.
+Stubs for `ext-protobuf` v4.33.3.
 
 Stub files: 46 | C ext classes: 57 | PHP lib classes: 121
 
-No stub changes from 33.1.0.
+No stub changes from 33.2.0.
 
 ## Divergences (C ext vs PHP lib)
 
