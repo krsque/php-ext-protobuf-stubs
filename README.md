@@ -1,16 +1,16 @@
 # krsque/php-ext-protobuf-stubs
 
-PHPStan / Psalm / PhpStorm stubs for `ext-protobuf` v4.27.4.
+PHPStan / Psalm / PhpStorm stubs for `ext-protobuf` v4.27.5.
 
 ## Installation
 
 ```
-composer require --dev krsque/php-ext-protobuf-stubs:~27.4.0
+composer require --dev krsque/php-ext-protobuf-stubs:~27.5.0
 ```
 
 ## Version convention
 
-Stubs versions map to `ext-protobuf` with the major version dropped: ext-protobuf `v4.27.4` → stubs `27.4.*`.
+Stubs versions map to `ext-protobuf` with the major version dropped: ext-protobuf `v4.27.5` → stubs `27.5.*`.
 
 ## PHPStan
 
