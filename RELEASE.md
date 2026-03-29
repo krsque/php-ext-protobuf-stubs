@@ -1,31 +1,10 @@
-# 30.0.0
+# 30.1.0
 
-Stubs for `ext-protobuf` v4.30.0.
+Stubs for `ext-protobuf` v4.30.1.
 
 Stub files: 45 | C ext classes: 56 | PHP lib classes: 116
 
-## Changes from 29.3.0
-
-**Method/constant changes:**
-- Added `Google\Protobuf\Enum::getEdition()`
-- Added `Google\Protobuf\Enum::setEdition()`
-- Added constant `Google\Protobuf\Syntax::SYNTAX_EDITIONS`
-- Added `Google\Protobuf\Type::getEdition()`
-- Added `Google\Protobuf\Type::setEdition()`
-
-**Other changes (PHPDoc, formatting):**
-- `Google\Protobuf\Any`
-- `Google\Protobuf\BoolValue`
-- `Google\Protobuf\BytesValue`
-- `Google\Protobuf\DoubleValue`
-- `Google\Protobuf\FloatValue`
-- `Google\Protobuf\Int32Value`
-- `Google\Protobuf\Int64Value`
-- `Google\Protobuf\NullValue`
-- `Google\Protobuf\StringValue`
-- `Google\Protobuf\Timestamp`
-- `Google\Protobuf\UInt32Value`
-- `Google\Protobuf\UInt64Value`
+No stub changes from 30.0.0.
 
 ## Divergences (C ext vs PHP lib)
 
