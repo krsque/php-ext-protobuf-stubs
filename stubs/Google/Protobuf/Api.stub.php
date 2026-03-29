@@ -11,6 +11,10 @@ namespace Google\Protobuf;
  * sometimes simply referred to as "APIs" in other contexts, such as the name of
  * this message itself. See https://cloud.google.com/apis/design/glossary for
  * detailed terminology.
+ * New usages of this message as an alternative to ServiceDescriptorProto are
+ * strongly discouraged. This message does not reliability preserve all
+ * information necessary to model the schema and preserve semantics. Instead
+ * make use of FileDescriptorSet which preserves the necessary information.
  *
  * Generated from protobuf message <code>google.protobuf.Api</code>
  */
@@ -54,6 +58,8 @@ final class Api extends \Google\Protobuf\Internal\Message
      *           Included interfaces. See [Mixin][].
      *     @type int $syntax
      *           The source syntax of the service.
+     *     @type string $edition
+     *           The source edition string, only valid when syntax is SYNTAX_EDITIONS.
      * }
      */
     public function __construct(?array $data = null) {}
@@ -169,6 +175,8 @@ final class Api extends \Google\Protobuf\Internal\Message
      */
     public function setSourceContext(\Google\Protobuf\SourceContext $var): static {}
 
+    public function hasSourceContext(): bool {}
+
     /**
      * Included interfaces. See [Mixin][].
      *
@@ -198,4 +206,18 @@ final class Api extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.protobuf.Syntax syntax = 7;</code>
      */
     public function setSyntax(int $var): static {}
+
+    /**
+     * The source edition string, only valid when syntax is SYNTAX_EDITIONS.
+     *
+     * Generated from protobuf field <code>string edition = 8;</code>
+     */
+    public function getEdition(): string {}
+
+    /**
+     * The source edition string, only valid when syntax is SYNTAX_EDITIONS.
+     *
+     * Generated from protobuf field <code>string edition = 8;</code>
+     */
+    public function setEdition(string $var): static {}
 }

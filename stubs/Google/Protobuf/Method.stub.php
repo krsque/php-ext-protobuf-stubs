@@ -4,6 +4,10 @@ namespace Google\Protobuf;
 
 /**
  * Method represents a method of an API interface.
+ * New usages of this message as an alternative to MethodDescriptorProto are
+ * strongly discouraged. This message does not reliability preserve all
+ * information necessary to model the schema and preserve semantics. Instead
+ * make use of FileDescriptorSet which preserves the necessary information.
  *
  * Generated from protobuf message <code>google.protobuf.Method</code>
  */
@@ -29,6 +33,12 @@ final class Method extends \Google\Protobuf\Internal\Message
      *           Any metadata attached to the method.
      *     @type int $syntax
      *           The source syntax of this method.
+     *           This field should be ignored, instead the syntax should be inherited from
+     *           Api. This is similar to Field and EnumValue.
+     *     @type string $edition
+     *           The source edition string, only valid when syntax is SYNTAX_EDITIONS.
+     *           This field should be ignored, instead the edition should be inherited from
+     *           Api. This is similar to Field and EnumValue.
      * }
      */
     public function __construct(?array $data = null) {}
@@ -121,15 +131,41 @@ final class Method extends \Google\Protobuf\Internal\Message
 
     /**
      * The source syntax of this method.
+     * This field should be ignored, instead the syntax should be inherited from
+     * Api. This is similar to Field and EnumValue.
      *
-     * Generated from protobuf field <code>.google.protobuf.Syntax syntax = 7;</code>
+     * Generated from protobuf field <code>.google.protobuf.Syntax syntax = 7 [deprecated = true];</code>
+     * @deprecated
      */
     public function getSyntax(): int {}
 
     /**
      * The source syntax of this method.
+     * This field should be ignored, instead the syntax should be inherited from
+     * Api. This is similar to Field and EnumValue.
      *
-     * Generated from protobuf field <code>.google.protobuf.Syntax syntax = 7;</code>
+     * Generated from protobuf field <code>.google.protobuf.Syntax syntax = 7 [deprecated = true];</code>
+     * @deprecated
      */
     public function setSyntax(int $var): static {}
+
+    /**
+     * The source edition string, only valid when syntax is SYNTAX_EDITIONS.
+     * This field should be ignored, instead the edition should be inherited from
+     * Api. This is similar to Field and EnumValue.
+     *
+     * Generated from protobuf field <code>string edition = 8 [deprecated = true];</code>
+     * @deprecated
+     */
+    public function getEdition(): string {}
+
+    /**
+     * The source edition string, only valid when syntax is SYNTAX_EDITIONS.
+     * This field should be ignored, instead the edition should be inherited from
+     * Api. This is similar to Field and EnumValue.
+     *
+     * Generated from protobuf field <code>string edition = 8 [deprecated = true];</code>
+     * @deprecated
+     */
+    public function setEdition(string $var): static {}
 }

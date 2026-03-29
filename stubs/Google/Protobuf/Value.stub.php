@@ -49,6 +49,8 @@ final class Value extends \Google\Protobuf\Internal\Message
      */
     public function setNullValue(int $var): static {}
 
+    public function hasNullValue(): bool {}
+
     /**
      * Represents a double value.
      *
@@ -62,6 +64,8 @@ final class Value extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>double number_value = 2;</code>
      */
     public function setNumberValue(float $var): static {}
+
+    public function hasNumberValue(): bool {}
 
     /**
      * Represents a string value.
@@ -77,6 +81,8 @@ final class Value extends \Google\Protobuf\Internal\Message
      */
     public function setStringValue(string $var): static {}
 
+    public function hasStringValue(): bool {}
+
     /**
      * Represents a boolean value.
      *
@@ -90,6 +96,8 @@ final class Value extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool bool_value = 4;</code>
      */
     public function setBoolValue(bool $var): static {}
+
+    public function hasBoolValue(): bool {}
 
     /**
      * Represents a structured value.
@@ -106,6 +114,8 @@ final class Value extends \Google\Protobuf\Internal\Message
      */
     public function setStructValue(\Google\Protobuf\Struct $var): static {}
 
+    public function hasStructValue(): bool {}
+
     /**
      * Represents a repeated `Value`.
      *
@@ -120,6 +130,8 @@ final class Value extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.protobuf.ListValue list_value = 6;</code>
      */
     public function setListValue(\Google\Protobuf\ListValue $var): static {}
+
+    public function hasListValue(): bool {}
 
     /**
      * @return string The field name in the oneof.

@@ -19,4 +19,6 @@ final class FieldsEntry extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Value|null $var
      */
     public function setValue($data): static {}
+
+    public function hasValue(): bool {}
 }

@@ -4,6 +4,10 @@ namespace Google\Protobuf;
 
 /**
  * Enum type definition.
+ * New usages of this message as an alternative to EnumDescriptorProto are
+ * strongly discouraged. This message does not reliability preserve all
+ * information necessary to model the schema and preserve semantics. Instead
+ * make use of FileDescriptorSet which preserves the necessary information.
  *
  * Generated from protobuf message <code>google.protobuf.Enum</code>
  */
@@ -91,6 +95,8 @@ final class Enum extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.protobuf.SourceContext source_context = 4;</code>
      */
     public function setSourceContext(\Google\Protobuf\SourceContext $var): static {}
+
+    public function hasSourceContext(): bool {}
 
     /**
      * The source syntax.
