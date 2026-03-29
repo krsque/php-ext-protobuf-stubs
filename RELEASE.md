@@ -1,31 +1,10 @@
-# 32.0.0
+# 32.1.0
 
-Stubs for `ext-protobuf` v4.32.0.
+Stubs for `ext-protobuf` v4.32.1.
 
 Stub files: 46 | C ext classes: 57 | PHP lib classes: 121
 
-## Changes from 31.1.0
-
-**Method/constant changes:**
-- Added `Google\Protobuf\Api::hasSourceContext()`
-- Added `Google\Protobuf\Api::getEdition()`
-- Added `Google\Protobuf\Api::setEdition()`
-- Added `Google\Protobuf\Enum::hasSourceContext()`
-- Added `Google\Protobuf\Method::getEdition()`
-- Added `Google\Protobuf\Method::setEdition()`
-- Added `Google\Protobuf\Option::hasValue()`
-- Added `Google\Protobuf\Struct\FieldsEntry::hasValue()`
-- Added `Google\Protobuf\Type::hasSourceContext()`
-- Added `Google\Protobuf\Value::hasNullValue()`
-- Added `Google\Protobuf\Value::hasNumberValue()`
-- Added `Google\Protobuf\Value::hasStringValue()`
-- Added `Google\Protobuf\Value::hasBoolValue()`
-- Added `Google\Protobuf\Value::hasStructValue()`
-- Added `Google\Protobuf\Value::hasListValue()`
-
-**Other changes (PHPDoc, formatting):**
-- `Google\Protobuf\EnumValue`
-- `Google\Protobuf\Field`
+No stub changes from 32.0.0.
 
 ## Divergences (C ext vs PHP lib)
 

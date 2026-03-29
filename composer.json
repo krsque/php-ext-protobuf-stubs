@@ -15,7 +15,7 @@
         "php": ">=8.1"
     },
     "conflict": {
-        "ext-protobuf": "!=4.32.0"
+        "ext-protobuf": "!=4.32.1"
     },
     "extra": {
         "phpstan": {
