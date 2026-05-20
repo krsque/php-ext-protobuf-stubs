@@ -3,8 +3,7 @@
 namespace Google\Protobuf;
 
 /**
- * `ListValue` is a wrapper around a repeated field of values.
- * The JSON representation for `ListValue` is JSON array.
+ * Represents a JSON array.
  *
  * Generated from protobuf message <code>google.protobuf.ListValue</code>
  */
