@@ -1,17 +1,10 @@
-# 35.0.0
+# 35.1.0
 
-Stubs for `ext-protobuf` v5.35.0.
+Stubs for `ext-protobuf` v5.35.1.
 
 Stub files: 46 | C ext classes: 57 | PHP lib classes: 118
 
-## Changes from 34.1.0
-
-**Other changes (PHPDoc, formatting):**
-- `Google\Protobuf\Any`
-- `Google\Protobuf\ListValue`
-- `Google\Protobuf\NullValue`
-- `Google\Protobuf\Struct`
-- `Google\Protobuf\Value`
+No stub changes from 35.0.0.
 
 ## Divergences (C ext vs PHP lib)
 
