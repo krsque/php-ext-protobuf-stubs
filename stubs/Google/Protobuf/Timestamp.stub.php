@@ -109,9 +109,9 @@ final class Timestamp extends \Google\Protobuf\Internal\Message
      * 9999-12-31T23:59:59Z inclusive.
      *
      * Generated from protobuf field <code>int64 seconds = 1;</code>
-     * @param int|string $var
+     * @param int|string $value
      */
-    public function setSeconds($var): static {}
+    public function setSeconds(mixed $value): static {}
 
     /**
      * Non-negative fractions of a second at nanosecond resolution. Negative
@@ -131,7 +131,7 @@ final class Timestamp extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 nanos = 2;</code>
      */
-    public function setNanos(int $var): static {}
+    public function setNanos(int $value): static {}
 
     /**
      * Converts a PHP DateTimeInterface to Timestamp.
