@@ -47,7 +47,7 @@ final class Enum extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 1;</code>
      */
-    public function setName(string $var): static {}
+    public function setName(string $value): static {}
 
     /**
      * Enum value definitions.
@@ -61,9 +61,9 @@ final class Enum extends \Google\Protobuf\Internal\Message
      * Enum value definitions.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.EnumValue enumvalue = 2;</code>
-     * @param list<\Google\Protobuf\EnumValue>|\Google\Protobuf\RepeatedField $var
+     * @param list<\Google\Protobuf\EnumValue>|\Google\Protobuf\RepeatedField $value
      */
-    public function setEnumvalue($var): static {}
+    public function setEnumvalue(mixed $value): static {}
 
     /**
      * Protocol buffer options.
@@ -77,24 +77,23 @@ final class Enum extends \Google\Protobuf\Internal\Message
      * Protocol buffer options.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Option options = 3;</code>
-     * @param list<\Google\Protobuf\Option>|\Google\Protobuf\RepeatedField $var
+     * @param list<\Google\Protobuf\Option>|\Google\Protobuf\RepeatedField $value
      */
-    public function setOptions($var): static {}
-
-    /**
-     * The source context.
-     *
-     * Generated from protobuf field <code>.google.protobuf.SourceContext source_context = 4;</code>
-     * @return \Google\Protobuf\SourceContext|null
-     */
-    public function getSourceContext() {}
+    public function setOptions(mixed $value): static {}
 
     /**
      * The source context.
      *
      * Generated from protobuf field <code>.google.protobuf.SourceContext source_context = 4;</code>
      */
-    public function setSourceContext(\Google\Protobuf\SourceContext $var): static {}
+    public function getSourceContext(): ?\Google\Protobuf\SourceContext {}
+
+    /**
+     * The source context.
+     *
+     * Generated from protobuf field <code>.google.protobuf.SourceContext source_context = 4;</code>
+     */
+    public function setSourceContext(\Google\Protobuf\SourceContext $value): static {}
 
     public function hasSourceContext(): bool {}
 
@@ -110,7 +109,7 @@ final class Enum extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Syntax syntax = 5;</code>
      */
-    public function setSyntax(int $var): static {}
+    public function setSyntax(int $value): static {}
 
     /**
      * The source edition string, only valid when syntax is SYNTAX_EDITIONS.
@@ -124,5 +123,5 @@ final class Enum extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string edition = 6;</code>
      */
-    public function setEdition(string $var): static {}
+    public function setEdition(string $value): static {}
 }
