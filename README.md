@@ -27,6 +27,21 @@ Add to your `psalm.xml`:
 
 ```xml
 <stubs>
-    <file name="vendor/krsque/php-ext-protobuf-stubs/stubs/" preloadClasses="true" />
+    <file name="vendor/krsque/php-ext-protobuf-stubs/psalm/protobuf.phpstub" preloadClasses="true" />
 </stubs>
 ```
+
+Psalm's `<stubs>` element accepts individual files only — pointing it at the
+`stubs/` directory silently loads nothing ([vimeo/psalm#5326]), so this package
+ships `psalm/protobuf.phpstub`: every stub concatenated into one file.
+
+Verify it is being picked up with `vendor/bin/psalm --debug`; you should see the
+`.phpstub` file parsed, and classes such as `Google\Protobuf\Internal\Message`
+should no longer report `Using reflection to get metadata`.
+
+[vimeo/psalm#5326]: https://github.com/vimeo/psalm/issues/5326
+
+## PhpStorm
+
+No configuration needed — PhpStorm indexes the `stubs/` directory once the
+package is installed.

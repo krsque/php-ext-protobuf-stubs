@@ -34,5 +34,5 @@ final class UInt32Value extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>uint32 value = 1;</code>
      */
-    public function setValue(int $var): static {}
+    public function setValue(int $value): static {}
 }
