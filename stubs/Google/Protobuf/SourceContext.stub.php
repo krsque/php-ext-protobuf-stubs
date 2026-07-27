@@ -37,5 +37,5 @@ final class SourceContext extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string file_name = 1;</code>
      */
-    public function setFileName(string $var): static {}
+    public function setFileName(string $value): static {}
 }

@@ -34,5 +34,5 @@ final class FloatValue extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>float value = 1;</code>
      */
-    public function setValue(float $var): static {}
+    public function setValue(float $value): static {}
 }
