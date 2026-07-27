@@ -43,5 +43,5 @@ final class Struct extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>map<string, .google.protobuf.Value> fields = 1;</code>
      */
-    public function setFields(array|\Google\Protobuf\Internal\MapField $var): static {}
+    public function setFields(array|\Google\Protobuf\Internal\MapField $value): static {}
 }

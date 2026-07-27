@@ -91,7 +91,7 @@ final class Duration extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int64 seconds = 1;</code>
      */
-    public function setSeconds(int|string $var): static {}
+    public function setSeconds(int|string $value): static {}
 
     /**
      * Signed fractions of a second at nanosecond resolution of the span
@@ -115,5 +115,5 @@ final class Duration extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 nanos = 2;</code>
      */
-    public function setNanos(int $var): static {}
+    public function setNanos(int $value): static {}
 }
