@@ -13,22 +13,22 @@ class GPBUtil
     /**
      * @internal
      */
-    public static function checkInt32(mixed &$var): void {}
+    public static function checkInt32(mixed $value): void {}
 
     /**
      * @internal
      */
-    public static function checkUint32(mixed &$var): void {}
+    public static function checkUint32(mixed $value): void {}
 
     /**
      * @internal
      */
-    public static function checkInt64(mixed &$var): void {}
+    public static function checkInt64(mixed $value): void {}
 
     /**
      * @internal
      */
-    public static function checkUint64(mixed &$var): void {}
+    public static function checkUint64(mixed $value): void {}
 
     /**
      * @param string $class Enum class name.
@@ -39,27 +39,27 @@ class GPBUtil
     /**
      * @internal
      */
-    public static function checkFloat(mixed &$var): void {}
+    public static function checkFloat(mixed $value): void {}
 
     /**
      * @internal
      */
-    public static function checkDouble(mixed &$var): void {}
+    public static function checkDouble(mixed $value): void {}
 
     /**
      * @internal
      */
-    public static function checkBool(mixed &$var): void {}
+    public static function checkBool(mixed $value): void {}
 
     /**
      * @internal
      */
-    public static function checkString(mixed &$var, bool $check_utf8): void {}
+    public static function checkString(mixed $value, bool $check_utf8): void {}
 
     /**
      * @internal
      */
-    public static function checkBytes($value): void {}
+    public static function checkBytes(mixed $value): void {}
 
     /**
      * @param string $class Message class name.
@@ -70,15 +70,15 @@ class GPBUtil
     /**
      * @param int $key_type GPBType constant for map key.
      * @param int $value_type GPBType constant for map value.
-     * @param class-string|null $klass Message class name (message/enum values only).
+     * @param class-string|null $value_class Message class name (message/enum values only).
      * @internal
      */
-    public static function checkMapField(mixed &$var, int $key_type, int $value_type, ?string $klass = null): void {}
+    public static function checkMapField(mixed $value, int $key_type, int $value_type, ?string $value_class = null): void {}
 
     /**
      * @param int $type GPBType constant.
-     * @param class-string|null $klass Message class name (message/enum fields only).
+     * @param class-string|null $class Message class name (message/enum fields only).
      * @internal
      */
-    public static function checkRepeatedField(mixed &$var, int $type, ?string $klass = null): void {}
+    public static function checkRepeatedField(mixed $value, int $type, ?string $class = null): void {}
 }
