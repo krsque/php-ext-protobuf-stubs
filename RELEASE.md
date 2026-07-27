@@ -1,36 +1,154 @@
-# 32.0.0
+# 32.0.1
 
 Stubs for `ext-protobuf` v4.32.0.
 
-Stub files: 46 | C ext classes: 57 | PHP lib classes: 121
+Stub files: 47 | C ext classes: 57 | PHP lib classes: 121
 
-## Changes from 31.1.0
+## Release notes
+
+- Corrections to generated stubs: the Psalm setup now loads real stubs via `psalm/protobuf.phpstub` (the previously documented `stubs/` directory path silently loaded nothing); return nullability, parameter types, arity and parameter names now follow the C extension's method bodies rather than its legacy arginfo; parameters the extension accepts positionally but cannot name are declared `@no-named-arguments`; and aliased class names such as `Google\Protobuf\Internal\RepeatedField` now resolve under both PHPStan and Psalm. See the package README for the updated Psalm configuration.
+
+## Changes from 32.0.0
+
+**Added classes:**
+- `Google\Protobuf\Internal\RepeatedField`
 
 **Method/constant changes:**
-- Added `Google\Protobuf\Api::hasSourceContext()`
-- Added `Google\Protobuf\Api::getEdition()`
-- Added `Google\Protobuf\Api::setEdition()`
-- Added `Google\Protobuf\Enum::hasSourceContext()`
-- Added `Google\Protobuf\Method::getEdition()`
-- Added `Google\Protobuf\Method::setEdition()`
-- Added `Google\Protobuf\Option::hasValue()`
-- Added `Google\Protobuf\Struct\FieldsEntry::hasValue()`
-- Added `Google\Protobuf\Type::hasSourceContext()`
-- Added `Google\Protobuf\Value::hasNullValue()`
-- Added `Google\Protobuf\Value::hasNumberValue()`
-- Added `Google\Protobuf\Value::hasStringValue()`
-- Added `Google\Protobuf\Value::hasBoolValue()`
-- Added `Google\Protobuf\Value::hasStructValue()`
-- Added `Google\Protobuf\Value::hasListValue()`
-
-**Other changes (PHPDoc, formatting):**
-- `Google\Protobuf\EnumValue`
-- `Google\Protobuf\Field`
+- Changed `Google\Protobuf\Any::setTypeUrl()` signature
+- Changed `Google\Protobuf\Any::setValue()` signature
+- Changed `Google\Protobuf\Any::is()` signature
+- Changed `Google\Protobuf\Any::pack()` signature
+- Changed `Google\Protobuf\Api::setName()` signature
+- Changed `Google\Protobuf\Api::setMethods()` signature
+- Changed `Google\Protobuf\Api::setOptions()` signature
+- Changed `Google\Protobuf\Api::setVersion()` signature
+- Changed `Google\Protobuf\Api::getSourceContext()` signature
+- Changed `Google\Protobuf\Api::setSourceContext()` signature
+- Changed `Google\Protobuf\Api::setMixins()` signature
+- Changed `Google\Protobuf\Api::setSyntax()` signature
+- Changed `Google\Protobuf\Api::setEdition()` signature
+- Changed `Google\Protobuf\BoolValue::setValue()` signature
+- Changed `Google\Protobuf\BytesValue::setValue()` signature
+- Changed `Google\Protobuf\DescriptorPool::getDescriptorByClassName()` signature
+- Changed `Google\Protobuf\DescriptorPool::getDescriptorByProtoName()` signature
+- Changed `Google\Protobuf\DescriptorPool::getEnumDescriptorByClassName()` signature
+- Changed `Google\Protobuf\DescriptorPool::internalAddGeneratedFile()` signature
+- Changed `Google\Protobuf\DoubleValue::setValue()` signature
+- Changed `Google\Protobuf\Duration::setSeconds()` signature
+- Changed `Google\Protobuf\Duration::setNanos()` signature
+- Changed `Google\Protobuf\Enum::setName()` signature
+- Changed `Google\Protobuf\Enum::setEnumvalue()` signature
+- Changed `Google\Protobuf\Enum::setOptions()` signature
+- Changed `Google\Protobuf\Enum::getSourceContext()` signature
+- Changed `Google\Protobuf\Enum::setSourceContext()` signature
+- Changed `Google\Protobuf\Enum::setSyntax()` signature
+- Changed `Google\Protobuf\Enum::setEdition()` signature
+- Changed `Google\Protobuf\EnumValue::setName()` signature
+- Changed `Google\Protobuf\EnumValue::setNumber()` signature
+- Changed `Google\Protobuf\EnumValue::setOptions()` signature
+- Changed `Google\Protobuf\Field::setKind()` signature
+- Changed `Google\Protobuf\Field::setCardinality()` signature
+- Changed `Google\Protobuf\Field::setNumber()` signature
+- Changed `Google\Protobuf\Field::setName()` signature
+- Changed `Google\Protobuf\Field::setTypeUrl()` signature
+- Changed `Google\Protobuf\Field::setOneofIndex()` signature
+- Changed `Google\Protobuf\Field::setPacked()` signature
+- Changed `Google\Protobuf\Field::setOptions()` signature
+- Changed `Google\Protobuf\Field::setJsonName()` signature
+- Changed `Google\Protobuf\Field::setDefaultValue()` signature
+- Changed `Google\Protobuf\Field\Cardinality::name()` signature
+- Changed `Google\Protobuf\Field\Cardinality::value()` signature
+- Changed `Google\Protobuf\Field\Kind::name()` signature
+- Changed `Google\Protobuf\Field\Kind::value()` signature
+- Changed `Google\Protobuf\FieldDescriptor::getContainingOneof()` signature
+- Changed `Google\Protobuf\FieldDescriptor::getRealContainingOneof()` signature
+- Changed `Google\Protobuf\FieldMask::setPaths()` signature
+- Changed `Google\Protobuf\FloatValue::setValue()` signature
+- Changed `Google\Protobuf\Int32Value::setValue()` signature
+- Changed `Google\Protobuf\Int64Value::setValue()` signature
+- Changed `Google\Protobuf\Internal\GPBUtil::checkInt32()` signature
+- Changed `Google\Protobuf\Internal\GPBUtil::checkUint32()` signature
+- Changed `Google\Protobuf\Internal\GPBUtil::checkInt64()` signature
+- Changed `Google\Protobuf\Internal\GPBUtil::checkUint64()` signature
+- Changed `Google\Protobuf\Internal\GPBUtil::checkFloat()` signature
+- Changed `Google\Protobuf\Internal\GPBUtil::checkDouble()` signature
+- Changed `Google\Protobuf\Internal\GPBUtil::checkBool()` signature
+- Changed `Google\Protobuf\Internal\GPBUtil::checkString()` signature
+- Changed `Google\Protobuf\Internal\GPBUtil::checkBytes()` signature
+- Changed `Google\Protobuf\Internal\GPBUtil::checkMapField()` signature
+- Changed `Google\Protobuf\Internal\GPBUtil::checkRepeatedField()` signature
+- Changed `Google\Protobuf\Internal\MapField::__construct()` signature
+- Changed `Google\Protobuf\Internal\MapField::offsetExists()` signature
+- Changed `Google\Protobuf\Internal\MapField::offsetGet()` signature
+- Changed `Google\Protobuf\Internal\MapField::offsetSet()` signature
+- Changed `Google\Protobuf\Internal\MapField::offsetUnset()` signature
+- Changed `Google\Protobuf\Internal\Message::serializeToJsonString()` signature
+- Changed `Google\Protobuf\Internal\Message::mergeFromJsonString()` signature
+- Changed `Google\Protobuf\Internal\Message::mergeFrom()` signature
+- Changed `Google\Protobuf\Internal\Message::readWrapperValue()` signature
+- Changed `Google\Protobuf\Internal\Message::writeWrapperValue()` signature
+- Changed `Google\Protobuf\Internal\Message::hasOneof()` signature
+- Changed `Google\Protobuf\Internal\Message::readOneof()` signature
+- Changed `Google\Protobuf\Internal\Message::writeOneof()` signature
+- Changed `Google\Protobuf\Internal\Message::whichOneof()` signature
+- Changed `Google\Protobuf\Internal\Message::__construct()` signature
+- Changed `Google\Protobuf\ListValue::setValues()` signature
+- Changed `Google\Protobuf\Method::setName()` signature
+- Changed `Google\Protobuf\Method::setRequestTypeUrl()` signature
+- Changed `Google\Protobuf\Method::setRequestStreaming()` signature
+- Changed `Google\Protobuf\Method::setResponseTypeUrl()` signature
+- Changed `Google\Protobuf\Method::setResponseStreaming()` signature
+- Changed `Google\Protobuf\Method::setOptions()` signature
+- Changed `Google\Protobuf\Method::setSyntax()` signature
+- Changed `Google\Protobuf\Method::setEdition()` signature
+- Changed `Google\Protobuf\Mixin::setName()` signature
+- Changed `Google\Protobuf\Mixin::setRoot()` signature
+- Changed `Google\Protobuf\NullValue::name()` signature
+- Changed `Google\Protobuf\NullValue::value()` signature
+- Changed `Google\Protobuf\Option::setName()` signature
+- Changed `Google\Protobuf\Option::getValue()` signature
+- Changed `Google\Protobuf\Option::setValue()` signature
+- Changed `Google\Protobuf\RepeatedField::__construct()` signature
+- Changed `Google\Protobuf\RepeatedField::append()` signature
+- Changed `Google\Protobuf\RepeatedField::offsetExists()` signature
+- Changed `Google\Protobuf\RepeatedField::offsetGet()` signature
+- Changed `Google\Protobuf\RepeatedField::offsetSet()` signature
+- Changed `Google\Protobuf\RepeatedField::offsetUnset()` signature
+- Changed `Google\Protobuf\SourceContext::setFileName()` signature
+- Changed `Google\Protobuf\StringValue::setValue()` signature
+- Changed `Google\Protobuf\Struct::setFields()` signature
+- Changed `Google\Protobuf\Struct\FieldsEntry::setKey()` signature
+- Changed `Google\Protobuf\Struct\FieldsEntry::getValue()` signature
+- Changed `Google\Protobuf\Struct\FieldsEntry::setValue()` signature
+- Changed `Google\Protobuf\Syntax::name()` signature
+- Changed `Google\Protobuf\Syntax::value()` signature
+- Changed `Google\Protobuf\Timestamp::setSeconds()` signature
+- Changed `Google\Protobuf\Timestamp::setNanos()` signature
+- Changed `Google\Protobuf\Type::setName()` signature
+- Changed `Google\Protobuf\Type::setFields()` signature
+- Changed `Google\Protobuf\Type::setOneofs()` signature
+- Changed `Google\Protobuf\Type::setOptions()` signature
+- Changed `Google\Protobuf\Type::getSourceContext()` signature
+- Changed `Google\Protobuf\Type::setSourceContext()` signature
+- Changed `Google\Protobuf\Type::setSyntax()` signature
+- Changed `Google\Protobuf\Type::setEdition()` signature
+- Changed `Google\Protobuf\UInt32Value::setValue()` signature
+- Changed `Google\Protobuf\UInt64Value::setValue()` signature
+- Changed `Google\Protobuf\Value::setNullValue()` signature
+- Changed `Google\Protobuf\Value::setNumberValue()` signature
+- Changed `Google\Protobuf\Value::setStringValue()` signature
+- Changed `Google\Protobuf\Value::setBoolValue()` signature
+- Changed `Google\Protobuf\Value::getStructValue()` signature
+- Changed `Google\Protobuf\Value::setStructValue()` signature
+- Changed `Google\Protobuf\Value::getListValue()` signature
+- Changed `Google\Protobuf\Value::setListValue()` signature
 
 ## Divergences (C ext vs PHP lib)
 
 - Google\Protobuf\Internal\GPBUtil::checkEnum() — param count: C=2, PHP=1 (using C)
 - Google\Protobuf\Internal\GPBUtil::checkMessage() — param count: C=2, PHP=3 (using C)
+- Google\Protobuf\DescriptorPool::getDescriptorByClassName() — nullability: def.c returns null, declared Descriptor (using C, widened to ?Descriptor)
+- Google\Protobuf\DescriptorPool::getEnumDescriptorByClassName() — nullability: def.c returns null, declared EnumDescriptor (using C, widened to ?EnumDescriptor)
 - Google\Protobuf\Internal\Message::__construct() — visibility: C=protected, PHP=public (using C)
 - Google\Protobuf\Any — extends: C=Google\Protobuf\Internal\Message, PHP=Google\Protobuf\Internal\AnyBase (using C)
 - Google\Protobuf\Timestamp — extends: C=Google\Protobuf\Internal\Message, PHP=Google\Protobuf\Internal\TimestampBase (using C)
@@ -106,7 +224,6 @@ These classes exist in the `google/protobuf` PHP library but not in the C extens
 - `Google\Protobuf\Internal\OneofField`
 - `Google\Protobuf\Internal\OneofOptions`
 - `Google\Protobuf\Internal\RawInputStream`
-- `Google\Protobuf\Internal\RepeatedField`
 - `Google\Protobuf\Internal\ServiceDescriptorProto`
 - `Google\Protobuf\Internal\ServiceOptions`
 - `Google\Protobuf\Internal\SourceCodeInfo`
