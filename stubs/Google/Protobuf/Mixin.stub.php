@@ -97,7 +97,7 @@ final class Mixin extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 1;</code>
      */
-    public function setName(string $var): static {}
+    public function setName(string $value): static {}
 
     /**
      * If non-empty specifies a path under which inherited HTTP paths
@@ -113,5 +113,5 @@ final class Mixin extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string root = 2;</code>
      */
-    public function setRoot(string $var): static {}
+    public function setRoot(string $value): static {}
 }
