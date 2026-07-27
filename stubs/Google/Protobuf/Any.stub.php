@@ -169,7 +169,7 @@ final class Any extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string type_url = 1;</code>
      */
-    public function setTypeUrl(string $var): static {}
+    public function setTypeUrl(string $value): static {}
 
     /**
      * Must be a valid serialized protocol buffer of the above specified type.
@@ -183,7 +183,7 @@ final class Any extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bytes value = 2;</code>
      */
-    public function setValue(string $var): static {}
+    public function setValue(string $value): static {}
 
     /**
      * Check if the Any message contains the given message type.
@@ -191,14 +191,14 @@ final class Any extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Internal\Message $proto A proto message instance to check against.
      * @return bool True if the Any contains the given message type.
      */
-    public function is(\Google\Protobuf\Internal\Message $proto): bool {}
+    public function is(string $proto): bool {}
 
     /**
      * Pack a message into this Any message.
      *
-     * @param \Google\Protobuf\Internal\Message $data The message to pack.
+     * @param \Google\Protobuf\Internal\Message $value The message to pack.
      */
-    public function pack(\Google\Protobuf\Internal\Message $data): void {}
+    public function pack(\Google\Protobuf\Internal\Message $value): void {}
 
     /**
      * Unpack the Any message to the given message type.

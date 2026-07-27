@@ -143,14 +143,14 @@ class Kind
     public const TYPE_SINT64 = 18;
 
     /**
-     * @param int $value Enum value.
+     * @param int $key Enum value.
      * @return string|null Enum name, or null if value is unknown.
      */
-    public static function name(int $value) {}
+    public static function name(int $key): ?string {}
 
     /**
-     * @param string $name Enum name.
+     * @param string $key Enum name.
      * @return int|null Enum value, or null if name is unknown.
      */
-    public static function value(string $name) {}
+    public static function value(string $key): ?int {}
 }

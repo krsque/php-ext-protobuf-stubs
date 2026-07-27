@@ -47,7 +47,7 @@ final class Value extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.NullValue null_value = 1;</code>
      */
-    public function setNullValue(int $var): static {}
+    public function setNullValue(int $value): static {}
 
     /**
      * Represents a double value.
@@ -61,7 +61,7 @@ final class Value extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>double number_value = 2;</code>
      */
-    public function setNumberValue(float $var): static {}
+    public function setNumberValue(float $value): static {}
 
     /**
      * Represents a string value.
@@ -75,7 +75,7 @@ final class Value extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string string_value = 3;</code>
      */
-    public function setStringValue(string $var): static {}
+    public function setStringValue(string $value): static {}
 
     /**
      * Represents a boolean value.
@@ -89,37 +89,35 @@ final class Value extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool bool_value = 4;</code>
      */
-    public function setBoolValue(bool $var): static {}
-
-    /**
-     * Represents a structured value.
-     *
-     * Generated from protobuf field <code>.google.protobuf.Struct struct_value = 5;</code>
-     * @return \Google\Protobuf\Struct|null
-     */
-    public function getStructValue() {}
+    public function setBoolValue(bool $value): static {}
 
     /**
      * Represents a structured value.
      *
      * Generated from protobuf field <code>.google.protobuf.Struct struct_value = 5;</code>
      */
-    public function setStructValue(\Google\Protobuf\Struct $var): static {}
+    public function getStructValue(): ?\Google\Protobuf\Struct {}
+
+    /**
+     * Represents a structured value.
+     *
+     * Generated from protobuf field <code>.google.protobuf.Struct struct_value = 5;</code>
+     */
+    public function setStructValue(\Google\Protobuf\Struct $value): static {}
 
     /**
      * Represents a repeated `Value`.
      *
      * Generated from protobuf field <code>.google.protobuf.ListValue list_value = 6;</code>
-     * @return \Google\Protobuf\ListValue|null
      */
-    public function getListValue() {}
+    public function getListValue(): ?\Google\Protobuf\ListValue {}
 
     /**
      * Represents a repeated `Value`.
      *
      * Generated from protobuf field <code>.google.protobuf.ListValue list_value = 6;</code>
      */
-    public function setListValue(\Google\Protobuf\ListValue $var): static {}
+    public function setListValue(\Google\Protobuf\ListValue $value): static {}
 
     /**
      * @return string The field name in the oneof.
