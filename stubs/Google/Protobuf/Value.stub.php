@@ -47,9 +47,9 @@ final class Value extends \Google\Protobuf\Internal\Message
      * Represents a null value.
      *
      * Generated from protobuf field <code>.google.protobuf.NullValue null_value = 1;</code>
-     * @param int $var one of the values in {@see \Google\Protobuf\NullValue}
+     * @param int $value one of the values in {@see \Google\Protobuf\NullValue}
      */
-    public function setNullValue(int $var): static {}
+    public function setNullValue(int $value): static {}
 
     public function hasNullValue(): bool {}
 
@@ -65,7 +65,7 @@ final class Value extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>double number_value = 2;</code>
      */
-    public function setNumberValue(float $var): static {}
+    public function setNumberValue(float $value): static {}
 
     public function hasNumberValue(): bool {}
 
@@ -81,7 +81,7 @@ final class Value extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string string_value = 3;</code>
      */
-    public function setStringValue(string $var): static {}
+    public function setStringValue(string $value): static {}
 
     public function hasStringValue(): bool {}
 
@@ -97,7 +97,7 @@ final class Value extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool bool_value = 4;</code>
      */
-    public function setBoolValue(bool $var): static {}
+    public function setBoolValue(bool $value): static {}
 
     public function hasBoolValue(): bool {}
 
@@ -105,16 +105,15 @@ final class Value extends \Google\Protobuf\Internal\Message
      * Represents a structured value.
      *
      * Generated from protobuf field <code>.google.protobuf.Struct struct_value = 5;</code>
-     * @return \Google\Protobuf\Struct|null
      */
-    public function getStructValue() {}
+    public function getStructValue(): ?\Google\Protobuf\Struct {}
 
     /**
      * Represents a structured value.
      *
      * Generated from protobuf field <code>.google.protobuf.Struct struct_value = 5;</code>
      */
-    public function setStructValue(?\Google\Protobuf\Struct $var): static {}
+    public function setStructValue(?\Google\Protobuf\Struct $value): static {}
 
     public function hasStructValue(): bool {}
 
@@ -122,16 +121,15 @@ final class Value extends \Google\Protobuf\Internal\Message
      * Represents a repeated `Value`.
      *
      * Generated from protobuf field <code>.google.protobuf.ListValue list_value = 6;</code>
-     * @return \Google\Protobuf\ListValue|null
      */
-    public function getListValue() {}
+    public function getListValue(): ?\Google\Protobuf\ListValue {}
 
     /**
      * Represents a repeated `Value`.
      *
      * Generated from protobuf field <code>.google.protobuf.ListValue list_value = 6;</code>
      */
-    public function setListValue(?\Google\Protobuf\ListValue $var): static {}
+    public function setListValue(?\Google\Protobuf\ListValue $value): static {}
 
     public function hasListValue(): bool {}
 

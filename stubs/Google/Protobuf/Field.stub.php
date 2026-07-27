@@ -57,9 +57,9 @@ final class Field extends \Google\Protobuf\Internal\Message
      * The field type.
      *
      * Generated from protobuf field <code>.google.protobuf.Field.Kind kind = 1;</code>
-     * @param int $var one of the values in {@see \Google\Protobuf\Field\Kind}
+     * @param int $value one of the values in {@see \Google\Protobuf\Field\Kind}
      */
-    public function setKind(int $var): static {}
+    public function setKind(int $value): static {}
 
     /**
      * The field cardinality.
@@ -73,9 +73,9 @@ final class Field extends \Google\Protobuf\Internal\Message
      * The field cardinality.
      *
      * Generated from protobuf field <code>.google.protobuf.Field.Cardinality cardinality = 2;</code>
-     * @param int $var one of the values in {@see \Google\Protobuf\Field\Cardinality}
+     * @param int $value one of the values in {@see \Google\Protobuf\Field\Cardinality}
      */
-    public function setCardinality(int $var): static {}
+    public function setCardinality(int $value): static {}
 
     /**
      * The field number.
@@ -89,7 +89,7 @@ final class Field extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 number = 3;</code>
      */
-    public function setNumber(int $var): static {}
+    public function setNumber(int $value): static {}
 
     /**
      * The field name.
@@ -103,7 +103,7 @@ final class Field extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 4;</code>
      */
-    public function setName(string $var): static {}
+    public function setName(string $value): static {}
 
     /**
      * The field type URL, without the scheme, for message or enumeration
@@ -119,7 +119,7 @@ final class Field extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string type_url = 6;</code>
      */
-    public function setTypeUrl(string $var): static {}
+    public function setTypeUrl(string $value): static {}
 
     /**
      * The index of the field type in `Type.oneofs`, for message or enumeration
@@ -135,7 +135,7 @@ final class Field extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 oneof_index = 7;</code>
      */
-    public function setOneofIndex(int $var): static {}
+    public function setOneofIndex(int $value): static {}
 
     /**
      * Whether to use alternative packed wire representation.
@@ -149,7 +149,7 @@ final class Field extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool packed = 8;</code>
      */
-    public function setPacked(bool $var): static {}
+    public function setPacked(bool $value): static {}
 
     /**
      * The protocol buffer options.
@@ -163,9 +163,9 @@ final class Field extends \Google\Protobuf\Internal\Message
      * The protocol buffer options.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Option options = 9;</code>
-     * @param list<\Google\Protobuf\Option>|\Google\Protobuf\RepeatedField $var
+     * @param list<\Google\Protobuf\Option>|\Google\Protobuf\RepeatedField $value
      */
-    public function setOptions(array|RepeatedField $var): static {}
+    public function setOptions(array|RepeatedField $value): static {}
 
     /**
      * The field JSON name.
@@ -179,7 +179,7 @@ final class Field extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string json_name = 10;</code>
      */
-    public function setJsonName(string $var): static {}
+    public function setJsonName(string $value): static {}
 
     /**
      * The string value of the default value of this field. Proto2 syntax only.
@@ -193,5 +193,5 @@ final class Field extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string default_value = 11;</code>
      */
-    public function setDefaultValue(string $var): static {}
+    public function setDefaultValue(string $value): static {}
 }
