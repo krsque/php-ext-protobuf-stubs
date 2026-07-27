@@ -36,7 +36,7 @@ final class UInt64Value extends \Google\Protobuf\Internal\Message
      * The uint64 value.
      *
      * Generated from protobuf field <code>uint64 value = 1;</code>
-     * @param int|string $var
+     * @param int|string $value
      */
-    public function setValue($var): static {}
+    public function setValue(mixed $value): static {}
 }

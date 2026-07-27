@@ -33,7 +33,7 @@ final class ListValue extends \Google\Protobuf\Internal\Message
      * Repeated field of dynamically typed values.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Value values = 1;</code>
-     * @param array<\Google\Protobuf\Value>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Google\Protobuf\Value>|\Google\Protobuf\Internal\RepeatedField $value
      */
-    public function setValues($var): static {}
+    public function setValues(mixed $value): static {}
 }

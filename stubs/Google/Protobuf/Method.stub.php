@@ -45,7 +45,7 @@ final class Method extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 1;</code>
      */
-    public function setName(string $var): static {}
+    public function setName(string $value): static {}
 
     /**
      * A URL of the input message type.
@@ -59,7 +59,7 @@ final class Method extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string request_type_url = 2;</code>
      */
-    public function setRequestTypeUrl(string $var): static {}
+    public function setRequestTypeUrl(string $value): static {}
 
     /**
      * If true, the request is streamed.
@@ -73,7 +73,7 @@ final class Method extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool request_streaming = 3;</code>
      */
-    public function setRequestStreaming(bool $var): static {}
+    public function setRequestStreaming(bool $value): static {}
 
     /**
      * The URL of the output message type.
@@ -87,7 +87,7 @@ final class Method extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string response_type_url = 4;</code>
      */
-    public function setResponseTypeUrl(string $var): static {}
+    public function setResponseTypeUrl(string $value): static {}
 
     /**
      * If true, the response is streamed.
@@ -101,7 +101,7 @@ final class Method extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool response_streaming = 5;</code>
      */
-    public function setResponseStreaming(bool $var): static {}
+    public function setResponseStreaming(bool $value): static {}
 
     /**
      * Any metadata attached to the method.
@@ -114,9 +114,9 @@ final class Method extends \Google\Protobuf\Internal\Message
      * Any metadata attached to the method.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Option options = 6;</code>
-     * @param array<\Google\Protobuf\Option>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Google\Protobuf\Option>|\Google\Protobuf\Internal\RepeatedField $value
      */
-    public function setOptions($var): static {}
+    public function setOptions(mixed $value): static {}
 
     /**
      * The source syntax of this method.
@@ -130,5 +130,5 @@ final class Method extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Syntax syntax = 7;</code>
      */
-    public function setSyntax(int $var): static {}
+    public function setSyntax(int $value): static {}
 }
