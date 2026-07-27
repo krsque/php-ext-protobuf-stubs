@@ -48,15 +48,14 @@ final class Option extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 1;</code>
      */
-    public function setName(string $var): static {}
+    public function setName(string $value): static {}
 
     /**
      * The option's value packed in an Any message.
      *
      * Generated from protobuf field <code>.google.protobuf.Any value = 2;</code>
-     * @return \Google\Protobuf\Any|null
      */
-    public function getValue() {}
+    public function getValue(): ?\Google\Protobuf\Any {}
 
     /**
      * The option's value packed in an Any message. If the value is a primitive,
@@ -66,5 +65,5 @@ final class Option extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Any value = 2;</code>
      */
-    public function setValue(\Google\Protobuf\Any $var): static {}
+    public function setValue(\Google\Protobuf\Any $value): static {}
 }
