@@ -37,7 +37,7 @@ final class EnumValue extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 1;</code>
      */
-    public function setName(string $var): static {}
+    public function setName(string $value): static {}
 
     /**
      * Enum value number.
@@ -51,7 +51,7 @@ final class EnumValue extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 number = 2;</code>
      */
-    public function setNumber(int $var): static {}
+    public function setNumber(int $value): static {}
 
     /**
      * Protocol buffer options.
@@ -64,7 +64,7 @@ final class EnumValue extends \Google\Protobuf\Internal\Message
      * Protocol buffer options.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Option options = 3;</code>
-     * @param array<\Google\Protobuf\Option>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Google\Protobuf\Option>|\Google\Protobuf\Internal\RepeatedField $value
      */
-    public function setOptions($var): static {}
+    public function setOptions(mixed $value): static {}
 }
