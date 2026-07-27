@@ -42,7 +42,7 @@ class Message
      * Serialize the message to json string.
      * @return string Serialized json protobuf data.
      */
-    public function serializeToJsonString($options = 0): string {}
+    public function serializeToJsonString(mixed $flags = 0): string {}
 
     /**
      * Parses a json string to protobuf message.
@@ -55,7 +55,7 @@ class Message
      * @param string $data Json protobuf data.
      * @throws \Exception Invalid data.
      */
-    public function mergeFromJsonString(string $data, bool $ignore_unknown = false): void {}
+    public function mergeFromJsonString(string $data, bool $arg = false): void {}
 
     /**
      * Merges the contents of the specified message into current message.
@@ -67,42 +67,42 @@ class Message
      * Singular/Oneof sub-messages are recursively merged. All overwritten
      * sub-messages are deep-copied.
      *
-     * @param object $msg Protobuf message to be merged from.
+     * @param object $data Protobuf message to be merged from.
      */
-    public function mergeFrom(object $msg): void {}
+    public function mergeFrom(object $data): void {}
 
     /**
-     * @param string $member Field name.
+     * @param string $field Field name.
      */
-    protected function readWrapperValue(string $member): mixed {}
+    protected function readWrapperValue(string $field): mixed {}
 
     /**
-     * @param string $member Field name.
+     * @param string $field Field name.
      */
-    protected function writeWrapperValue(string $member, mixed $value): void {}
+    protected function writeWrapperValue(string $field, mixed $value): void {}
 
     /**
-     * @param int $number Field number.
+     * @param int $field Field number.
      */
-    protected function hasOneof(int $number): bool {}
+    protected function hasOneof(int $field): bool {}
 
     /**
-     * @param int $number Field number.
+     * @param int $field Field number.
      */
-    protected function readOneof(int $number): mixed {}
+    protected function readOneof(int $field): mixed {}
 
     /**
-     * @param int $number Field number.
+     * @param int $field Field number.
      */
-    protected function writeOneof(int $number, mixed $value): void {}
+    protected function writeOneof(int $field, mixed $value): void {}
 
     /**
      * @return string The field name in the oneof.
      */
-    protected function whichOneof(string $oneof_name): string {}
+    protected function whichOneof(string $field): string {}
 
     /**
      * @ignore
      */
-    protected function __construct($data = null) {}
+    protected function __construct(?array $data = null) {}
 }

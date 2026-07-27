@@ -72,7 +72,7 @@ final class Api extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 1;</code>
      */
-    public function setName(string $var): static {}
+    public function setName(string $value): static {}
 
     /**
      * The methods of this interface, in unspecified order.
@@ -86,9 +86,9 @@ final class Api extends \Google\Protobuf\Internal\Message
      * The methods of this interface, in unspecified order.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Method methods = 2;</code>
-     * @param list<\Google\Protobuf\Method>|\Google\Protobuf\RepeatedField $var
+     * @param list<\Google\Protobuf\Method>|\Google\Protobuf\RepeatedField $value
      */
-    public function setMethods($var): static {}
+    public function setMethods(mixed $value): static {}
 
     /**
      * Any metadata attached to the interface.
@@ -102,9 +102,9 @@ final class Api extends \Google\Protobuf\Internal\Message
      * Any metadata attached to the interface.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Option options = 3;</code>
-     * @param list<\Google\Protobuf\Option>|\Google\Protobuf\RepeatedField $var
+     * @param list<\Google\Protobuf\Option>|\Google\Protobuf\RepeatedField $value
      */
-    public function setOptions($var): static {}
+    public function setOptions(mixed $value): static {}
 
     /**
      * A version string for this interface. If specified, must have the form
@@ -150,16 +150,7 @@ final class Api extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string version = 4;</code>
      */
-    public function setVersion(string $var): static {}
-
-    /**
-     * Source context for the protocol buffer service represented by this
-     * message.
-     *
-     * Generated from protobuf field <code>.google.protobuf.SourceContext source_context = 5;</code>
-     * @return \Google\Protobuf\SourceContext|null
-     */
-    public function getSourceContext() {}
+    public function setVersion(string $value): static {}
 
     /**
      * Source context for the protocol buffer service represented by this
@@ -167,7 +158,15 @@ final class Api extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.SourceContext source_context = 5;</code>
      */
-    public function setSourceContext(\Google\Protobuf\SourceContext $var): static {}
+    public function getSourceContext(): ?\Google\Protobuf\SourceContext {}
+
+    /**
+     * Source context for the protocol buffer service represented by this
+     * message.
+     *
+     * Generated from protobuf field <code>.google.protobuf.SourceContext source_context = 5;</code>
+     */
+    public function setSourceContext(\Google\Protobuf\SourceContext $value): static {}
 
     /**
      * Included interfaces. See [Mixin][].
@@ -181,9 +180,9 @@ final class Api extends \Google\Protobuf\Internal\Message
      * Included interfaces. See [Mixin][].
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Mixin mixins = 6;</code>
-     * @param list<\Google\Protobuf\Mixin>|\Google\Protobuf\RepeatedField $var
+     * @param list<\Google\Protobuf\Mixin>|\Google\Protobuf\RepeatedField $value
      */
-    public function setMixins($var): static {}
+    public function setMixins(mixed $value): static {}
 
     /**
      * The source syntax of the service.
@@ -197,5 +196,5 @@ final class Api extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.google.protobuf.Syntax syntax = 7;</code>
      */
-    public function setSyntax(int $var): static {}
+    public function setSyntax(int $value): static {}
 }
