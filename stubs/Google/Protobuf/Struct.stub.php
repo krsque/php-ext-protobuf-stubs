@@ -39,7 +39,7 @@ final class Struct extends \Google\Protobuf\Internal\Message
      * Unordered map of dynamically typed values.
      *
      * Generated from protobuf field <code>map<string, .google.protobuf.Value> fields = 1;</code>
-     * @param array|\Google\Protobuf\Internal\MapField $var
+     * @param array|\Google\Protobuf\Internal\MapField $value
      */
-    public function setFields($var): static {}
+    public function setFields(mixed $value): static {}
 }
