@@ -27,12 +27,9 @@ final class FieldDescriptor
      */
     public function getEnumType(): \Google\Protobuf\EnumDescriptor {}
 
-    public function getContainingOneof(): \Google\Protobuf\OneofDescriptor {}
+    public function getContainingOneof(): ?\Google\Protobuf\OneofDescriptor {}
 
-    /**
-     * @return \Google\Protobuf\OneofDescriptor|null
-     */
-    public function getRealContainingOneof() {}
+    public function getRealContainingOneof(): ?\Google\Protobuf\OneofDescriptor {}
 
     /**
      * Returns true if this field tracks presence, ie. does the field

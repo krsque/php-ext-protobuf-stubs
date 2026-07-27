@@ -1,6 +1,6 @@
 <?php
 
-namespace Google\Protobuf;
+namespace Google\Protobuf\Internal;
 
 /**
  * @template TValue

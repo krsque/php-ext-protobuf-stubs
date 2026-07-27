@@ -36,5 +36,5 @@ final class BytesValue extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bytes value = 1;</code>
      */
-    public function setValue(string $var): static {}
+    public function setValue(string $value): static {}
 }
