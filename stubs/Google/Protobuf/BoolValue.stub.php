@@ -34,5 +34,5 @@ final class BoolValue extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool value = 1;</code>
      */
-    public function setValue(bool $var): static {}
+    public function setValue(bool $value): static {}
 }
