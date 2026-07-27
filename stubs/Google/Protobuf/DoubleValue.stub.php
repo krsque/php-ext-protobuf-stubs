@@ -34,5 +34,5 @@ final class DoubleValue extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>double value = 1;</code>
      */
-    public function setValue(float $var): static {}
+    public function setValue(float $value): static {}
 }
