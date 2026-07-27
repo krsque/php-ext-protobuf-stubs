@@ -33,12 +33,9 @@ final class FieldDescriptor
      */
     public function getEnumType(): \Google\Protobuf\EnumDescriptor {}
 
-    public function getContainingOneof(): \Google\Protobuf\OneofDescriptor {}
+    public function getContainingOneof(): ?\Google\Protobuf\OneofDescriptor {}
 
-    /**
-     * @return \Google\Protobuf\OneofDescriptor|null
-     */
-    public function getRealContainingOneof() {}
+    public function getRealContainingOneof(): ?\Google\Protobuf\OneofDescriptor {}
 
     /**
      * @return Descriptor Returns a descriptor for the field type if the field type is a message, otherwise throws \Exception
