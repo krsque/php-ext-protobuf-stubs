@@ -183,7 +183,7 @@ final class FieldMask extends \Google\Protobuf\Internal\Message
      * The set of field mask paths.
      *
      * Generated from protobuf field <code>repeated string paths = 1;</code>
-     * @param list<string>|\Google\Protobuf\RepeatedField $var
+     * @param list<string>|\Google\Protobuf\RepeatedField $value
      */
-    public function setPaths($var): static {}
+    public function setPaths(mixed $value): static {}
 }
