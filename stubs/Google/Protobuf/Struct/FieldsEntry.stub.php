@@ -8,15 +8,9 @@ final class FieldsEntry extends \Google\Protobuf\Internal\Message
 
     public function getKey(): string {}
 
-    public function setKey($data): static {}
+    public function setKey(string $value): static {}
 
-    /**
-     * @return \Google\Protobuf\Value|null
-     */
-    public function getValue() {}
+    public function getValue(): ?\Google\Protobuf\Value {}
 
-    /**
-     * @param \Google\Protobuf\Value|null $var
-     */
-    public function setValue($data): static {}
+    public function setValue(?\Google\Protobuf\Value $value): static {}
 }

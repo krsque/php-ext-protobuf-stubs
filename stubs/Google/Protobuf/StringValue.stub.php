@@ -36,5 +36,5 @@ final class StringValue extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string value = 1;</code>
      */
-    public function setValue(string $var): static {}
+    public function setValue(string $value): static {}
 }
