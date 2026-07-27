@@ -49,7 +49,7 @@ final class Type extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string name = 1;</code>
      */
-    public function setName(string $var): static {}
+    public function setName(string $value): static {}
 
     /**
      * The list of fields.
@@ -63,9 +63,9 @@ final class Type extends \Google\Protobuf\Internal\Message
      * The list of fields.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Field fields = 2;</code>
-     * @param list<\Google\Protobuf\Field>|\Google\Protobuf\RepeatedField $var
+     * @param list<\Google\Protobuf\Field>|\Google\Protobuf\RepeatedField $value
      */
-    public function setFields(array|RepeatedField $var): static {}
+    public function setFields(array|RepeatedField $value): static {}
 
     /**
      * The list of types appearing in `oneof` definitions in this type.
@@ -79,9 +79,9 @@ final class Type extends \Google\Protobuf\Internal\Message
      * The list of types appearing in `oneof` definitions in this type.
      *
      * Generated from protobuf field <code>repeated string oneofs = 3;</code>
-     * @param list<string>|\Google\Protobuf\RepeatedField $var
+     * @param list<string>|\Google\Protobuf\RepeatedField $value
      */
-    public function setOneofs(array|RepeatedField $var): static {}
+    public function setOneofs(array|RepeatedField $value): static {}
 
     /**
      * The protocol buffer options.
@@ -95,24 +95,23 @@ final class Type extends \Google\Protobuf\Internal\Message
      * The protocol buffer options.
      *
      * Generated from protobuf field <code>repeated .google.protobuf.Option options = 4;</code>
-     * @param list<\Google\Protobuf\Option>|\Google\Protobuf\RepeatedField $var
+     * @param list<\Google\Protobuf\Option>|\Google\Protobuf\RepeatedField $value
      */
-    public function setOptions(array|RepeatedField $var): static {}
-
-    /**
-     * The source context.
-     *
-     * Generated from protobuf field <code>.google.protobuf.SourceContext source_context = 5;</code>
-     * @return \Google\Protobuf\SourceContext|null
-     */
-    public function getSourceContext() {}
+    public function setOptions(array|RepeatedField $value): static {}
 
     /**
      * The source context.
      *
      * Generated from protobuf field <code>.google.protobuf.SourceContext source_context = 5;</code>
      */
-    public function setSourceContext(?\Google\Protobuf\SourceContext $var): static {}
+    public function getSourceContext(): ?\Google\Protobuf\SourceContext {}
+
+    /**
+     * The source context.
+     *
+     * Generated from protobuf field <code>.google.protobuf.SourceContext source_context = 5;</code>
+     */
+    public function setSourceContext(?\Google\Protobuf\SourceContext $value): static {}
 
     public function hasSourceContext(): bool {}
 
@@ -128,9 +127,9 @@ final class Type extends \Google\Protobuf\Internal\Message
      * The source syntax.
      *
      * Generated from protobuf field <code>.google.protobuf.Syntax syntax = 6;</code>
-     * @param int $var one of the values in {@see \Google\Protobuf\Syntax}
+     * @param int $value one of the values in {@see \Google\Protobuf\Syntax}
      */
-    public function setSyntax(int $var): static {}
+    public function setSyntax(int $value): static {}
 
     /**
      * The source edition string, only valid when syntax is SYNTAX_EDITIONS.
@@ -144,5 +143,5 @@ final class Type extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string edition = 7;</code>
      */
-    public function setEdition(string $var): static {}
+    public function setEdition(string $value): static {}
 }
