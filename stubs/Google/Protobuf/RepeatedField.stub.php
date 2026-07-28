@@ -7,7 +7,7 @@ namespace Google\Protobuf;
  * @implements \ArrayAccess<int, TValue>
  * @implements \IteratorAggregate<int, TValue>
  */
-final class RepeatedField implements \ArrayAccess, \IteratorAggregate, \Countable
+class RepeatedField implements \ArrayAccess, \IteratorAggregate, \Countable
 {
     /**
      * Constructs an instance of RepeatedField.
