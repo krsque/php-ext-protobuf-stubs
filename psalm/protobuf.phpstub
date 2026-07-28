@@ -3374,8 +3374,10 @@ namespace Google\Protobuf {
 
 namespace {
     // Class aliases, as registered by zend_register_class_alias_ex() in the
-    // C extension. Psalm resolves these, so both names are one type here.
-    // stubs/ cannot do the same — PHPStan ignores class_alias() — and carries
-    // a duplicate declaration per alias instead.
+    // C extension. Psalm resolves these statically, so both names are one type
+    // here, assignable in both directions. stubs/ cannot do the same: PHPStan
+    // honours class_alias() only in files it executes, and a stub file is only
+    // ever parsed. It declares each alias as a subclass of its target instead,
+    // which is assignable from the alias to the target only.
     class_alias(\Google\Protobuf\RepeatedField::class, \Google\Protobuf\Internal\RepeatedField::class);
 }
